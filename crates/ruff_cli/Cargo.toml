@@ -37,7 +37,7 @@ cachedir = { version = "0.3.0" }
 chrono = { workspace = true }
 clap = { workspace = true, features = ["derive", "env"] }
 clap_complete_command = { version = "0.5.1" }
-clearscreen = { version = "2.0.0" }
+clearscreen = { version = "5.0.0" }
 colored = { workspace = true }
 filetime = { workspace = true }
 glob = { workspace = true }
