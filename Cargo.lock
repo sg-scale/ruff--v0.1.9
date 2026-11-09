@@ -133,7 +133,7 @@ version = "0.1.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1287c4f82a41c5085e65ee337c7934d71ab43d5187740a81fb69129013f6a5f6"
 dependencies = [
- "fs-err",
+ "fs-err 2.11.0",
  "os_str_bytes",
 ]
 
@@ -809,7 +809,7 @@ checksum = "0ce7134b9999ecaf8bcd65542e436736ef32ddca1b3e06094cb6ec5755203b80"
 
 [[package]]
 name = "flake8-to-ruff"
-version = "0.1.8"
+version = "0.1.9"
 dependencies = [
  "anyhow",
  "clap",
@@ -861,6 +861,15 @@ name = "fs-err"
 version = "2.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "88a41f105fe1d5b6b34b2055e3dc59bb79b46b48b2040b9e6c7b4b5de097aa41"
+dependencies = [
+ "autocfg",
+]
+
+[[package]]
+name = "fs-err"
+version = "3.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b5c95b673b8f6f7235229ae11c5642d81b04c2e64c1e2fb417bc0cf73ca45f29"
 dependencies = [
  "autocfg",
 ]
@@ -2063,7 +2072,7 @@ dependencies = [
 
 [[package]]
 name = "ruff_cli"
-version = "0.1.8"
+version = "0.1.9"
 dependencies = [
  "annotate-snippets 0.9.2",
  "anyhow",
@@ -2199,7 +2208,7 @@ dependencies = [
 
 [[package]]
 name = "ruff_linter"
-version = "0.1.8"
+version = "0.1.9"
 dependencies = [
  "aho-corasick",
  "annotate-snippets 0.9.2",
@@ -2452,11 +2461,11 @@ dependencies = [
 
 [[package]]
 name = "ruff_shrinking"
-version = "0.1.8"
+version = "0.1.9"
 dependencies = [
  "anyhow",
  "clap",
- "fs-err",
+ "fs-err 3.3.2",
  "regex",
  "ruff_python_ast",
  "ruff_python_parser",
